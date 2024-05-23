@@ -1,0 +1,51 @@
+.briem-hand {
+    font-family: "Briem Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  .nanum-myeongjo-regular {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: "Briem Hand", cursive;
+}
+
+p, .form{
+    font-family: "Nanum Myeongjo", serif;
+}
+
+
+
+.rightSide{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: rgba(250, 232, 189, 0.822);
+    background-image: url('images/rainbow-4047523_1920.jpg');
+    background-size: contain;
+    background-repeat:repeat ;
+    
+}
+
+
+
+.form{
+    width: 50vw;
+    margin: 30px;
+}
+
+
+
