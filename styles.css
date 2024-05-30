@@ -1,51 +1,96 @@
-.briem-hand {
-    font-family: "Briem Hand", cursive;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-  .nanum-myeongjo-regular {
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Nunito, sans-serif;
 }
 
-h1{
-    font-family: "Briem Hand", cursive;
-}
-
-p, .form{
-    font-family: "Nanum Myeongjo", serif;
-}
-
-
-
-.rightSide{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 50vw;
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     height: 100vh;
-    background-color: rgba(250, 232, 189, 0.822);
-    background-image: url('images/rainbow-4047523_1920.jpg');
-    background-size: contain;
-    background-repeat:repeat ;
-    
 }
 
-
-
-.form{
-    width: 50vw;
-    margin: 30px;
+.left{
+    background-color: #fff;
+    font-size: 22px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
 }
 
+.right{
+    background-color: #f3f4f6;
+    display: grid;
+}
+
+.rightContainer{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 2px 20px 20px #0000000c;
+    padding: 25px;
+    justify-self: center;
+    align-self: center;
+    width: 35vw;
+    height: 80vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.right .rightContainer h2{
+    text-align: center;
+}
+
+form{
+    display: grid;
+    gap: 2px;
+}
+
+.submit{
+    text-align: center;
+}
+
+input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(213, 207, 207);
+    font-size: 16px;
+}
+
+input:focus{
+    border: none;
+    box-shadow: 0px 0px 5px rgba(21, 21, 222, 0.5);
+    outline: none;
+}
+
+input:invalid:focus{
+    border: 2px solid #aa94ea;
+}
+
+input:valid:focus{
+    border: 2px solid rgb(0, 183, 255);
+}
+
+button[type="submit"]{
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #a78bfa;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
+}
+
+.submit a{
+    text-decoration: none;
+    color: #a78bfa;
+}
+
+.submit p{
+    font-size: 17px;
+}
 
 

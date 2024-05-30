@@ -1,38 +1,46 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Project: Sign-up Form</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Caveat:wght@400..700&family=Satisfy&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div class="rightSide">Hi</div>
-        <div class="main">
-            <h1>Sign Up Form</h1>
-            <p>Let's create your account</p>
-            <div class="form">
-                <form>
-                    <label for="fname">FIRST NAME</label><br>
-                    <input type="text" id="fname" name="first_name" ><br><br>
-                    <label for="lname">LAST NAME</label><br>
-                    <input type="text" id="lname" name="last_name" ><br><br>
-                    <label for="email">EMAIl</label><br>
-                    <input type="email" id="email" name="email" ><br><br>
-                    <label for="number">PHONE NUMBER</label><br>
-                    <input type="tel" id="number" name="phone_number" ><br><br>
-                    <label for="password">PASSWORD</label><br>
-                    <input type="password" id="password" name="password" ><br><br>
-                    <label for="cPassword">CONFIRM PASSWORD</label><br>
-                    <input type="password" id="cPassword" name="confirm_password" ><br><br>
-                    <button type="submit">Create Account</button>
-                </form>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Sign-up Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <h3>In the middle of difficulty lies opportunity</h3>
+            <p>-Albert Einstein</p>
+        </div>
+        <div class="right">
+            <div class="rightContainer">
+            <h2>Let's do this!</h2>
+            <form id="form">
+                <label for="fname">FIRST NAME</label>
+                <input type="text" id="fname" name="first_name" required><br>
+                <label for="lname">LAST NAME</label>
+                <input type="text" id="lname" name="last_name" required><br>
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" required autocomplete="off"><br>
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" id="phone" name="phone_number" required pattern="^\d{10}$"><br>
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" required pattern="^(?=.*\d)(?=.*[\W_]).+$"><br>
+                <label for="cPassword">CONFIRM PASSWORD</label>
+                <input type="password" id="cPassword" name="confirm_password" required pattern="^(?=.*\d)(?=.*[\W_]).+$"><br>
+            </form>
+            <div class="submit">
+                <button type="submit" form="form">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
             </div>
         </div>
-    </body>
+    </div>
+    <script>
+    </script>
+    
+</body>
 </html>
-
