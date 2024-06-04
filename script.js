@@ -1,0 +1,10 @@
+const fname = document.querySelector("#fNameJS");
+const lname = document.querySelector("#lNamesJS");
+const email = document.querySelector("#emailJS");
+const phone= document.querySelector("#phoneJS");
+const password = document.querySelector("#passwordJS");
+const cPassword = document.querySelector("#cPasswordJS");
+const = document.querySelector("");
+const = document.querySelector("");
+const = document.querySelector("");
+const = document.querySelector("");
