@@ -12,36 +12,38 @@
 <body>
     <div class="main">
         <div class="left">
+            <div class="leftText">
             <h3>In the middle of difficulty lies opportunity</h3>
             <p>-Albert Einstein</p>
+            </div>
         </div>
         <div class="right">
             <div class="rightContainer">
             <h2>Let's do this!</h2>
             <form id="form">
                 <label for="fname">FIRST NAME
-                <input type="text" id="fname" name="first_name" required>
-                <div id="fNameJS"></div>
+                <input type="text" id="fname" name="first_name">
+                <div id="fNameError" class="error"></div>
                 </label><br>
                 <label for="lname">LAST NAME
                 <input type="text" id="lname" name="last_name" required>
-                <div id="lNameJS"></div>
+                <div id="lNameError" class="error"></div>
                 </label><br>
                 <label for="email">EMAIL
                 <input type="email" id="email" name="email" required autocomplete="off">
-                <div id="emailJS"></div>
+                <div id="emailError" class="error"></div>
                 </label><br>
                 <label for="phone">PHONE NUMBER
                 <input type="tel" id="phone" name="phone_number" required pattern="^\d{10}$">
-                <div id="phoneJS"></div>
+                <div id="phoneError" class="error"></div>
                 </label><br>
                 <label for="password">PASSWORD
                 <input type="password" id="password" name="password" required pattern="^(?=.*\d)(?=.*[\W_]).+$">
-                <div id="passwordJS"></div>
+                <div id="passwordError" class="error"></div>
                 </label><br>
                 <label for="cPassword">CONFIRM PASSWORD
                 <input type="password" id="cPassword" name="confirm_password" required pattern="^(?=.*\d)(?=.*[\W_]).+$">
-                <div id="cPasswordJS"></div>
+                <div id="cPasswordError" class="error"></div>
                 </label><br>
             </form>
             <div class="submit">
@@ -51,6 +53,6 @@
             </div>
         </div>
     </div>
-    <script href="script.js"></script>  
+    <script src="script.js"></script>  
 </body>
 </html>
